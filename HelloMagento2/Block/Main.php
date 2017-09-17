@@ -15,7 +15,6 @@ class Main extends Template
     }
 
     /**
-     * set message
      *
      * @return $this
      */
