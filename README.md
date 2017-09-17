@@ -1,1 +1,1 @@
-# Magento2 custom modules
+# Magento2 custom modules 'HelloMagento2'
