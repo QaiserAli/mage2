@@ -1,6 +1,8 @@
-# Magento2 custom modules 'HelloMagento2'
+# Magento2 custom modules
 
-### Route
+### 1. HelloMagento2
+
+##### URL
 {base_url}/hello/hello/index 
 
 In this module we create a route url and an action class in the controller to handle the routing path.
