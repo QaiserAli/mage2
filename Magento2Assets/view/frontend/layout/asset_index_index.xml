@@ -1,0 +1,13 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css" src_type="url"/>
+        <css src="Mage2_Magento2Assets::dialog.css"/>
+        <link src="Mage2_Magento2Assets::dialog.js"/>
+    </head>
+    <referenceContainer  name="content">
+        <block
+                template="main_content.phtml"
+                class="Mage2\Magento2Assets\Block\Main"
+                name="mage2_magento2_asset"/>
+    </referenceContainer>
+</page>
