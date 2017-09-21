@@ -1,1 +1,11 @@
 <p>RequireJs module</p>
+
+<?php
+$data = $this->getTestData(); ?>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "magento2requirejs": <?php /* @noEscape */ echo $data; ?>
+        }
+    }
+</script>
