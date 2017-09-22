@@ -1,15 +1,14 @@
 define([
     "jquery",
-    "logger",
     "jquery/ui"
-    ], function ($, logger) {
-    "use strict";
-    logger.log('test.js file is loaded');
-    $.widget('testjs', {
+    ], function ($) {
+    'use strict';
+    console.log('test.js file is loaded');
+    $.widget('mage.testjs', {
         _create: function() {
             var self = this;
-            logger.log(self.options);
+            console.log(self.options);
         }
     });
-    return $.test;
+    return $.mage.testjs;
 });
