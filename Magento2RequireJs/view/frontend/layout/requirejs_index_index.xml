@@ -1,0 +1,8 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="1column" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <referenceContainer  name="content">
+        <block
+                template="main_content.phtml"
+                class="Mage2\Magento2RequireJs\Block\Main"
+                name="mage2_magento2_requirejs"/>
+    </referenceContainer>
+</page>
