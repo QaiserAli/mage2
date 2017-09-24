@@ -12,5 +12,5 @@ This module covers how to use js and requireJs files in magento2
 ### 4. Magento2Crud
 The module covers how to create a CRUD models in magento2. CRUD stands for Create, Read, Update and Delete.
 
-### 5. FetchSimpleProducts
+### 5. SimpleProducts
 This module covers how to fetch latest simple products via repositories
