@@ -1,0 +1,20 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Mage2_AdminMenu::custom_menu"
+             title="Custom Menu"
+             module="Mage2_AdminMenu"
+             sortOrder="30"
+             parent="Magento_Catalog::catalog"
+             dependsOnModule="Magento_Catalog"
+             resource="Magento_Catalog::catalog"
+        />
+        <add id="Mage2_AdminMenu::link_to_catalog"
+             title="Link To Catalog"
+             module="Mage2_AdminMenu"
+             sortOrder="40"
+             parent="Mage2_AdminMenu::custom_menu"
+             resource="Magento_Catalog::catalog"
+             action="catalog/product/index"
+        />
+    </menu>
+</config>
