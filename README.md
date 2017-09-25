@@ -14,3 +14,6 @@ The module covers how to create a CRUD models in magento2. CRUD stands for Creat
 
 ### 5. SimpleProducts
 This module covers how to fetch latest simple products via repositories
+
+### 6. AdminMenu
+In this module we show how to add custom menu link in admin panel.
