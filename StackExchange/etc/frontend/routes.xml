@@ -1,0 +1,8 @@
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="standard">
+        <route id="stackexchange" frontName="stackexchange">
+            <module name="Mage2_StackExchange" />
+        </route>
+    </router>
+</config>

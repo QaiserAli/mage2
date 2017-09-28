@@ -1,4 +1,4 @@
-# Magento2 custom modules
+## Magento2 custom modules
 
 ### 1. HelloMagento2
 Simple HelloMagento2 module
@@ -11,3 +11,20 @@ This module covers how to use js and requireJs files in magento2
 
 ### 4. Magento2Crud
 The module covers how to create a CRUD models in magento2. CRUD stands for Create, Read, Update and Delete.
+=======
+
+### 4. Magento2Crud
+The module covers how to create a CRUD models in magento2. CRUD stands for Create, Read, Update and Delete.
+
+### 5. SimpleProducts
+This module covers how to fetch latest simple products via repositories
+
+### 6. AdminMenu
+In this module we show how to add custom menu link in admin panel.
+
+### 7. HelloMagento2Admin
+The moduel covers how to create a URL in backend and add a cutom menu
+
+
+### 8. StackExchange
+Random magento2 scripts

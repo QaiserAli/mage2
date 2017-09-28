@@ -1,0 +1,14 @@
+<?php
+/**
+ * @var \Mage2\SimpleProducts\Block\SimpleProducts $this;
+ */
+?>
+<h3>Simple Product Module</h3>
+<div class="content">
+    <?php foreach ($this->getSimpleProducts() as $simpleProduct): ?>
+        <?php
+            echo  $simpleProduct->getId() . '---' . $simpleProduct->getName() .
+            '...' . $simpleProduct->getSku() . "<br />";
+        ?>
+    <?php endforeach; ?>
+</div>

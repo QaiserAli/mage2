@@ -1,0 +1,21 @@
+<?php
+/**
+ * @var \Mage2\Magento2Crud\Block\Main $this
+ */
+?>
+<h3><?php echo $this->escapeHtml($this->getHeading()); ?></h3>
+
+<table>
+    <tr>
+        <th>S.No</th>
+        <th>Title</th>
+        <th>Reading Date</th>
+    </tr>
+    <?php foreach ($this->getBooksCollection() as $book): ?>
+        <tr>
+            <td><?php echo $book->getBookId(); ?></td>
+            <td><?php echo $book->getBookTitle(); ?></td>
+            <td><?php echo $book->getDateRead(); ?></td>
+        </tr>
+    <?php endforeach;?>
+</table>

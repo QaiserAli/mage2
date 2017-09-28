@@ -1,0 +1,12 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Mage2_HelloMagento2Admin::custom_menu"
+             title="Hello Magento2"
+             module="Mage2_HelloMagento2Admin"
+             sortOrder="30"
+             parent="Magento_Backend::system_other_settings"
+             resource="Magento_Backend::content"
+             action="m2admin/index/index"
+        />
+    </menu>
+</config>
