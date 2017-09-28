@@ -19,7 +19,7 @@ This module covers how to fetch latest simple products via repositories
 In this module we show how to add custom menu link in admin panel.
 
 ### 7. HelloMagento2Admin
-The moduel covers how to create a URL in backend and add a cutom menu
+The module covers how to create a URL in backend and add a custom menu
 
 
 ### 8. StackExchange
