@@ -21,6 +21,8 @@ In this module we show how to add custom menu link in admin panel.
 ### 7. HelloMagento2Admin
 The module covers how to create a URL in backend and add a custom menu
 
-
 ### 8. StackExchange
 Random magento2 scripts
+
+### 9. HelloMagento2Cmd
+The module covers how to create your own custom command
