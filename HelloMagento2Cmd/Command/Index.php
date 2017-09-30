@@ -2,6 +2,7 @@
 namespace Mage2\HelloMagento2Cmd\Command;
 
 use Mage2\HelloMagento2Cmd\Model\Message;
+use Magento\Framework\ObjectManagerInterface;
 use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
@@ -14,12 +15,19 @@ class Index extends Command
     protected $message;
 
     /**
+     * @var ObjectManagerInterface
+     */
+    protected $objectManager;
+
+    /**
      * Index constructor.
      * @param Message $message
+     * @param ObjectManagerInterface $objectManager
      */
-    public function __construct(Message $message)
+    public function __construct(Message $message, ObjectManagerInterface $objectManager)
     {
         $this->message = $message;
+        $this->objectManager =$objectManager;
         parent::__construct();
     }
 
@@ -44,5 +52,16 @@ class Index extends Command
     public function execute(InputInterface $input, OutputInterface $output)
     {
         $output->writeln($this->message->getHelloMessage());
+        $output->writeln($this->getObjectDetails());
+    }
+
+    /**
+     * @return string
+     */
+    public function getObjectDetails()
+    {
+        $object = $this->objectManager->create('Mage2\HelloMagento2Cmd\Model\HelloMessage');
+        return get_class($object);
+
     }
 }
