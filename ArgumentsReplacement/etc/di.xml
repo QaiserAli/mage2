@@ -1,0 +1,24 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="mage2ArgumentsReplacementCmd" xsi:type="object">Mage2\ArgumentsReplacement\Command\Index</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <type name="Mage2\ArgumentsReplacement\Model\Device">
+        <arguments>
+            <argument name="devices" xsi:type="array">
+                <item name="0" xsi:type="string">Iphone 7 32GB</item>
+                <item name="1" xsi:type="string">Samsung 5s</item>
+                <item name="2" xsi:type="string">Iphone 8 Black</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <preference
+            for="Mage2\ArgumentsReplacement\Model\DeviceInterface"
+            type="Mage2\ArgumentsReplacement\Model\Device" />
+
+</config>
