@@ -27,17 +27,15 @@ class Index extends Action
     /**
      * Index constructor.
      * @param Context $context
-     * @param ObjectManagerInterface $objectManager
      * @param FastLoading $fastLoading
      * @param SlowLoading $slowLoading
      */
     public function __construct(
         Context $context,
-        ObjectManagerInterface $objectManager,
         FastLoading $fastLoading,
         SlowLoading $slowLoading
     ) {
-        $this->objectManager = $objectManager;
+        $this->objectManager = $context->getObjectManager();
         $this->fastLoading = $fastLoading;
         $this->slowLoading = $slowLoading;
         parent::__construct($context);
