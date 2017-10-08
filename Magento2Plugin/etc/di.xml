@@ -1,0 +1,11 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/config.xsd">
+    <type name="Mage2\Magento2Plugin\Model\Device">
+        <plugin name="mage2_magento2_model_device_plugin"
+                type="Mage2\Magento2Plugin\Model\Plugin"
+                sortOrder="15"/>
+    </type>
+    <preference
+            for="Mage2\Magento2Plugin\Model\DeviceInterface"
+            type="Mage2\Magento2Plugin\Model\Device" />
+
+</config>
