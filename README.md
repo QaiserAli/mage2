@@ -29,3 +29,6 @@ The module covers how to create your own custom command
 
 ### 10. ArgumentsReplacement
 The module covers how to replace arguments via configuration file that's been injected in the constrcutor method
+
+### 10. Virtual Types
+The module covers how to replace arguments via configuration file that's been injected in the constrcutor method using VirtualTypes.

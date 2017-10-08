@@ -1,0 +1,26 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/config.xsd">
+    <type name="Magento\Framework\Console\CommandList">
+        <arguments>
+            <argument name="commands" xsi:type="array">
+                <item name="mage2VirtualTypeCmd" xsi:type="object">Mage2\VirtualTypes\Command\Index</item>
+            </argument>
+        </arguments>
+    </type>
+
+    <virtualType name="VirtualDeviceClass" type="Mage2\VirtualTypes\Model\Apple">
+        <arguments>
+            <argument name="appleList" xsi:type="object">Mage2\VirtualTypes\Model\AndroidList</argument>
+        </arguments>
+    </virtualType>
+
+    <type name="Mage2\VirtualTypes\Model\Device">
+        <arguments>
+            <argument name="apple" xsi:type="object">VirtualDeviceClass</argument>
+        </arguments>
+    </type>
+
+    <preference
+            for="Mage2\VirtualTypes\Model\DeviceInterface"
+            type="Mage2\VirtualTypes\Model\Device" />
+
+</config>
