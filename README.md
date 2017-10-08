@@ -30,5 +30,8 @@ The module covers how to create your own custom command
 ### 10. ArgumentsReplacement
 The module covers how to replace arguments via configuration file that's been injected in the constrcutor method
 
-### 10. Virtual Types
+### 11. VirtualTypes
 The module covers how to replace arguments via configuration file that's been injected in the constrcutor method using VirtualTypes.
+
+### 12. ProxyObjects
+The module covers how to use proxy classes which extends other classes to become lazy-loaded versions of them.

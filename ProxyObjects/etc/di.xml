@@ -1,0 +1,8 @@
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/config.xsd">
+    <type name="Mage2\ProxyObjects\Controller\Index\Index">
+        <arguments>
+            <argument name="slowLoading" xsi:type="object">Mage2\ProxyObjects\Model\SlowLoading\Proxy</argument>
+        </arguments>
+    </type>
+
+</config>
