@@ -37,4 +37,8 @@ The module covers how to replace arguments via configuration file that's been in
 The module covers how to use proxy classes which extends other classes to become lazy-loaded versions of them.
 
 ### 13. Magento2Plugin
-The module covers how to use plugin/interceptor to extend or modify behavior by applying code before, after or around that observed method. 
+The module covers how to use plugin/interceptor to extend or modify behavior by applying code before, after or around that observed method.
+
+### 14. M2JsInit
+In this module we are going to cover how to execute javascript code wihtout embedding it directly in template with script tag
+ 
